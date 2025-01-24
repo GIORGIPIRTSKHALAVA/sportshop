@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       
+        <div id="notification" style="display:none; position:fixed; bottom:10px; right:10px; background-color:#4CAF50; color:white; padding:10px; border-radius:5px; opacity:0; transition:opacity 0.5s;">
+        </div>
+        
+        <nav style="display: flex; align-items: center;">
+            <ul style="flex-grow: 1; display: flex; padding: 0; margin: 0;">
+                
+                <button id="dark-mode-toggle">
+                    <i class="fas fa-sun"></i> 
+                </button>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+          
+
+               
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+                <li><a href="registration.php">რეგისტრაცია</a></li>
+                <li><a href="login.php">შესვლა</a></li>
+              
+                
+                
+                <li>
+                    <a href="logout.php">
+                        გამოსვლა
+                        <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                        
+                    </a>
+                </li>
+                
+
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="შეიყვანეთ პროდუქტი...">
+                <button id="search-button" onclick="navigatePage()">ძებნა</button>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
+    </main>
+    <section>
+       
+        <div class="sports_div">
+            <div class="image">
+                <img src="./imige/football wallpaperr.jpg" alt="Img1">
+                <div class="overlay">
+                    <a href="Football.html" class="name">
+                        <h2 class="sports-NAME">ფეხბურთი</h2>
+                    </a>
+                    <p>მაისურები</p>
+                    <p>ბურთები</p>
+                    <p>ბუცები</p>
+                    <p>მეკარის ხელთათმანები</p>
+            </div>
+            </div>
+        </div>
+        <div class="sports_div">
+            <div class="image">
+                <img src="./imige/basketball.jpg" alt="Img1">
+                <div class="overlay">
+                    <a href="basketball.html" class="name">  
+                        <h2 class="sports-NAME">კალათბურთი</h2>
+                    </a>
+                    <p>მაისურები</p>
+                    <p>ბურთები</p>
+                    <p>ბოტასები</p>
+                </div>
+            </div>    
+        </div>
+        <div class="sports_div">
+            <div class="image">
+                <img src="./imige/rugby.jpg" alt="Img1" class="rugby_img">
+                <div class="overlay">
+                    <a href="Rugby.html" class="name">
+                        <h2 class="sports-NAME">რაგბი</h2>
+                    </a>
+                    <p>მაისურები</p>
+                    <p>ბურთები</p>
+                    <p>ბუცები</p></div>
+            </div>
+        </div>
+        <div class="sports_div">
+            <div class="image">
+                <img src="./imige/boxing.jpg" alt="Img1">
+                <div class="overlay">
+                    <a href="boxing.html" class="name">
+                        <h2 class="sports-NAME">ბოქსი</h2>
+                    </a>
+                    <p>ბოქსის გრუშები</p>
+                    <p>ბოქსის ხელთათმანები</p>
+                    <p>კაპები</p>
+                    <p>ჩაფხუტები</p>
+                    <p>ბოქსის ფეხსაცმელი</p></div>
+            </div>
+            </div>
+            <div class="sports_div">
+                <div class="image">
+                    <img src="./imige/tennis.jpg" alt="Img1">
+                    <div class="overlay">
+                        <a href="tennis.html" class="name"> 
+                            <h2 class="sports-NAME">ჩოგბურთი</h2>
+                        </a>
+                        <p>ჩოგნები</p>
+                        <p>ბურთები</p>
+                        </div>
+                </div>
+</section>
+<footer>
+    <div class="footer-links">
+        <div class="quick-links">
+            <h3>სწრაფი ბმულები</h3>
+            <ul>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>   
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+                <li><a href="registration.php">რეგისტრაცია</a></li>
+            </ul>
+        </div>
+        
+        <div class="product-categories">
+            <h3>კატეგორიები</h3>
+            <ul>
+                <li><a href="football.html">ფეხბურთი</a></li>
+                <li><a href="basketball.html">კალათბურთი</a></li>
+                <li><a href="Rugby.html">რაგბი</a></li>
+                <li><a href="boxing.html">ბოქსი</a></li>
+                <li><a href="tennis.html">ჩოგბურთი</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>კონტაქტი</h3>
+            <p>ელფოსტა: <a href="sportshop@gmail.com">sportshop@gmail.com</a></p>
+            <p>ტელეფონი: +995 555 555 555</p>
+            <p>მისამართი: თბილისი, საქართველო</p>
+        </div>
+        
+        <div class="newsletter">
+            <h3>გამოწერა</h3>
+            <form>
+                <input type="email" placeholder="თქვენი ელფოსტა">
+                <button type="submit">გამოწერა</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+    </div>
+    <div class="google-map">
+        <h3>ჩვენი მაღაზია</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.68842897147!2d44.75275777517601!3d41.79192797080641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446e0b6f5fe34b%3A0xb887de0d38a21984!2zMTAg4YOe4YOU4YOi4YOg4YOUIOGDmOGDkeGDlOGDoOGDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1735936226989!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer-terms">
+        <p><a href="privacy.html">კონფიდენციალურობის პოლიტიკა</a> | <a href="terms.html">გამოყენების პირობები</a> | <a href="returns.html">დაბრუნების პოლიტიკა</a></p>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </div>
+</footer>
+
+                
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

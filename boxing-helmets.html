@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბურთების კატეგორია</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+          
+
+               
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+            <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+            <li><a href="registration.php">რეგისტრაცია</a></li>
+            <li><a href="login.php">შესვლა</a></li>
+          
+            
+            
+            <li>
+                <a href="logout.php">
+                    გამოსვლა
+                    <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                    
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+
+    <main>
+        <h2 class="NAMES">ჩაფხუტები</h2>
+        <div class="product_div">
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(1).jpeg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(159)">159₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 159, './imige/chapxuti(1).jpeg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(1).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(169)">169₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 169, './imige/chapxuti(1).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(2).jpeg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(129)">129₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 129, './imige/chapxuti(2).jpeg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(2).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(119)">119₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 119, './imige/chapxuti(2).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(3).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(189)">189₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 189, './imige/chapxuti(3).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(4).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(179)">179₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 179, './imige/chapxuti(4).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(1).jpeg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(159)">159₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 159, './imige/chapxuti(1).jpeg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(1).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(169)">169₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 169, './imige/chapxuti(1).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(2).jpeg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(129)">129₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 129, './imige/chapxuti(2).jpeg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(2).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(119)">119₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 119, './imige/chapxuti(2).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(3).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(189)">189₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 189, './imige/chapxuti(3).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chapxuti(4).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(179)">179₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 179, './imige/chapxuti(4).jpg')">🛒კალათში დამატება</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p> 
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

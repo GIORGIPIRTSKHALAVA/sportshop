@@ -1,0 +1,451 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1.sport_name {
+    text-align: center;
+    margin: 20px 0;
+    color: #1a73e8;
+}
+
+.product_div, .T_shirt_product_div, .Boots_product_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product, .T_shirt_product, .boots_product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover, .T_shirt_product:hover, .boots_product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img, .T_shirt_product img, .boots_product img {
+    width: 100%;
+    height: auto;
+}
+
+.ball_name, .club_name, .boots_name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #444;
+}
+
+.product_price, .boots_price {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.product_price::before, .boots_price::before {
+    content: "ფასი: ";
+}
+
+.T_shirt_product .product_price {
+    background-color: #d32f2f;
+}
+
+.T_shirt_product .product_price::before {
+    content: "ფასი: ";
+}
+.NAMES{
+    text-align: center;
+    
+}
+header {
+    background-color: #1B1F3B;
+    color: #af1212;
+    padding: 15px 0;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none; 
+    z-index: 1000; 
+    transition: opacity 0.5s; 
+    opacity: 1;
+}
+
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000; 
+    background: #f9f9f9; 
+    border-radius: 5px; 
+    padding: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.cart-item button {
+    margin-left: auto;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.total-box {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.clear-cart-btn {
+    background-color: #FF5733; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.clear-cart-btn:hover {
+    background-color: #FF4500; 
+}
+.kalata{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+footer {
+    background-color: #1B1F3B;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+h1{
+    padding-left: 320px;
+}
+.total-box {
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 12px;
+    background-color: #1d3557;
+    color: #f1faee;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.total-box:hover {
+    transform: scale(1.05);
+    background-color: #457b9d;
+}
+
+.add-to-cart-button {
+    background-color: #747774; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.add-to-cart-button:hover {
+    background-color: red; 
+}
+.cart-actions {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clear-cart, .checkout {
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clear-cart:hover, .checkout:hover {
+    background-color: #c0392b; 
+}
+
+.checkout {
+    background-color: #3498db; 
+}
+
+.checkout:hover {
+    background-color: #2980b9; 
+}
+.size-options {
+    display:flex;
+    gap: 6px;
+    margin: 6px 0;
+}
+
+.size-option {
+    padding: 2px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 10px;
+}
+
+.size-option:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.size-option.selected {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #003d80;
+}
+#notification span {
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+#notification {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.5s ease;
+}
+/* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode nav ul li a {
+    color: white
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffdd57;
+}
+body.dark-mode span{
+    color:black
+}
+body.dark-mode.main.cart.detail span{
+    color: white
+}
+footer {
+    background-color: #1B1F3B;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Highlight color for section titles */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.footer-social {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: #e6b800;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-terms p {
+    font-size: 0.85em;
+    margin-top: 20px;
+}
+
+.footer-terms a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-terms a:hover {
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#notification span {
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+/* Google Map Section Styling */
+.google-map-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.google-map-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.google-map-wrapper iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+}
+

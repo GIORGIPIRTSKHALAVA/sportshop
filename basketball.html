@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav style="display: flex; align-items: center;">
+            <ul style="flex-grow: 1; display: flex; list-style: none; padding: 0; margin: 0;">
+             
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+          
+
+               
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+                <li><a href="registration.php">რეგისტრაცია</a></li>
+                <li><a href="login.php">შესვლა</a></li>
+              
+                
+                
+                <li>
+                    <a href="logout.php">
+                        გამოსვლა
+                        <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                        
+                    </a>
+                </li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="შეიყვანეთ სპორტი და პროდუქტი...">
+                <button id="search-button" onclick="navigatePage()">ძებნა</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
+    </main>
+    <h2 class="sport_name">კალათბურთი</h2>
+    
+    <div class="sports_container">
+        <div class="sports_div">
+            <a href="formebi_Bask.html" class="name">
+                <h2 class="sports-NAME">მაისურები</h2>
+            </a>
+        </div>
+        <div class="sports_div">
+            <a href="Botasebi_Bask.html" class="name">
+                <h2 class="sports-NAME">ბოტასები</h2>
+            </a>
+        </div>
+        <div class="sports_div">
+            <a href="basketball_ball.html" class="name">
+                <h2 class="sports-NAME">ბურთები</h2>
+            </a>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </footer>
+    
+    <script src="cart.js"></script>
+
+</body>
+</html>

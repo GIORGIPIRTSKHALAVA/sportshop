@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+          
+
+               
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+                <li><a href="registration.php">რეგისტრაცია</a></li>
+                <li><a href="login.php">შესვლა</a></li>
+              
+                
+                
+                <li>
+                    <a href="logout.php">
+                        გამოსვლა
+                        <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                        
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+    <main id="mainContent">
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
+    </main>
+<h2 class="NAMES">ბურთები</h2>
+<div class="Boots_product_div">
+    <div class="boots_product">
+        <p class="boots_name">Adidas</p>
+        <img src="./imige/basketball ball (1).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Adidas', 119, './imige/basketball ball (1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Adidas</p>
+        <img src="./imige/basketball ball (1).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Adidas', 129, './imige/basketball ball (1).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Spalding</p>
+        <img src="./imige/basketball ball (2).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Spalding', 149, './imige/basketball ball (2).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Molten</p>
+        <img src="./imige/basketball ball (3).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Molten', 199, './imige/basketball ball (3).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball ball (4).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball ball (4).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Spalding</p>
+        <img src="./imige/basketball ball (5).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Spalding', 129, './imige/basketball shoes (1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Adidas</p>
+        <img src="./imige/basketball ball (1).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Adidas', 119, './imige/basketball ball (1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Adidas</p>
+        <img src="./imige/basketball ball (1).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Adidas', 129, './imige/basketball ball (1).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Spalding</p>
+        <img src="./imige/basketball ball (2).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Spalding', 149, './imige/basketball ball (2).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Molten</p>
+        <img src="./imige/basketball ball (3).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Molten', 199, './imige/basketball ball (3).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball ball (4).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball ball (4).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Sure</p>
+        <img src="./imige/basketball ball (6).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Sure', 129, './imige/basketball shoes (1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+
+</main>
+</div>
+</main>
+
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </footer>
+
+    <script src="cart.js"></script>
+
+
+</body>
+</html>

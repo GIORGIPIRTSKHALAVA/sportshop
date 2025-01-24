@@ -1,0 +1,378 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+.name{
+    text-decoration: none;
+    color:#007bff ;
+}
+header {
+    background-color:#1B1F3B ;
+    color: #fff;
+    padding: 15px 0;
+    padding-left: 180px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sports_div {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.sports_div:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image:hover img {
+    filter: blur(4px);
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sports_div:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sports_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.football_img{
+    margin-left: 10px;
+}
+
+.sports_div {
+    width: 45%; 
+    margin: 10px;
+    text-align: center;
+}
+.rugby_img{
+    width: 650px;
+}
+
+.search-container {
+    display: inline-block;
+    margin-left: auto;
+}
+#search-bar {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sport_name{
+    padding-left: 700px;
+}
+.sports-NAME{
+    color: #e6b800;
+}
+
+
+footer {
+    background-color: #1B1F3B;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Highlight color for section titles */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+.contact-info p,
+.newsletter form {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e6b800;
+}
+
+.footer-social {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: #e6b800;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-terms p {
+    font-size: 0.85em;
+    margin-top: 20px;
+}
+
+.footer-terms a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-terms a:hover {
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Prevent horizontal scroll */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .sports_div {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+#notification span {
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+/* Google Map Section Styling */
+.google-map-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.google-map-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.google-map-wrapper iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+}
+#notification {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    z-index: 1000; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+/* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: black
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffdd57;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+
+
+
+    

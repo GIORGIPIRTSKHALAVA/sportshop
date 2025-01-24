@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+    
+    <title>Clothing Size Calculator</title>
+    
+    
+</head>
+<header>
+    <nav style="display: flex; align-items: center;">
+        <ul style="flex-grow: 1; display: flex; list-style: none; padding: 0; margin: 0;">
+            <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+      
+
+           
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="about.html">ჩვენს შესახებ</a></li>
+        <li><a href="services.html">სერვისები</a></li>
+        <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+        <li><a href="registration.php">რეგისტრაცია</a></li>
+        <li><a href="login.php">შესვლა</a></li>
+      
+        
+        
+        <li>
+            <a href="logout.php">
+                გამოსვლა
+                <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                
+            </a>
+        </li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="შეიყვანეთ სპორტი და პროდუქტი...">
+            <button id="search-button" onclick="navigatePage()">ძებნა</button>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <h1>გაიგე რა ზომის ტანსაცმელი გჭირდება</h1>
+        <form id="sizeForm" onsubmit="calculateSize(); return false;">
+            <label for="height">სიმაღლე (cm):</label>
+            <input type="number" id="height" name="height" required placeholder="შეიყვანე სიმაღლე...">
+            
+            <label for="weight">წონა (kg):</label>
+            <input type="number" id="weight" name="weight" required placeholder="შეიყვანე წონა...">
+            
+            <button type="submit">გამოთვლა</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="cart.js"></script>
+    
+</body>
+
+</html>
+
+
+
+
+

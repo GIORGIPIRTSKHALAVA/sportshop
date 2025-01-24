@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>
+          
+
+               
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+            <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+            <li><a href="registration.php">რეგისტრაცია</a></li>
+            <li><a href="login.php">შესვლა</a></li>
+          
+            
+            
+            <li>
+                <a href="logout.php">
+                    გამოსვლა
+                    <img src="imige/logout-icon-template-black-color-editable-log-out-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg"  alt="Logout" style="width:40px; height:40px; vertical-align:middle;">
+                    
+                </a>
+            </li>
+                
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+    <main id="mainContent">
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
+    </main>
+<h2 class="NAMES">მაისურები</h2>
+<div class="T_shirt_product_div">
+    <div class="T_shirt_product">
+        <p class="club_name">Golden State</p>
+        <img src="./imige/basketball maisurebi(1).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        
+        <button class="add-to-cart-button" onclick="addToCart('Golden State', 119, './imige/basketball maisurebi(1).avif')">🛒კალათაში დამატება</button>
+        
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Celtics</p>
+        <img src="./imige/basketball maisurebi(1).jpg" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Celtics', 129, './imige/basketball maisurebi(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">BULLS</p>
+        <img src="./imige/basketball maisurebi(2).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('BULLS', 149, './imige/basketball maisurebi(2).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Miami</p>
+        <img src="./imige/basketball maisurebi(3).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Miami', 199, './imige/basketball maisurebi(3).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Golden State</p>
+        <img src="./imige/basketball maisurebi(1).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Golden State', 119, './imige/basketball maisurebi(1).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Celtics</p>
+        <img src="./imige/basketball maisurebi(1).jpg" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Celtics', 129, './imige/basketball maisurebi(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Goldan State</p>
+        <img src="./imige/basketball maisurebi(1).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Golden State', 119, './imige/basketball maisurebi(1).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Celtics</p>
+        <img src="./imige/basketball maisurebi(1).jpg" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Celtics', 129, './imige/basketball maisurebi(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">BULLS</p>
+        <img src="./imige/basketball maisurebi(2).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('BULLS', 149, './imige/basketball maisurebi(2).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Miami</p>
+        <img src="./imige/basketball maisurebi(3).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Miami', 199, './imige/basketball maisurebi(3).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Golden State</p>
+        <img src="./imige/basketball maisurebi(1).avif" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Golden State', 119, './imige/basketball maisurebi(1).avif')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="T_shirt_product">
+        <p class="club_name">Celtics</p>
+        <img src="./imige/basketball maisurebi(1).jpg" alt="boots" class="T_shirt">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <div class="size-options">
+            <span class="size-option" onclick="selectSize(this, 'S')">S</span>
+            <span class="size-option" onclick="selectSize(this, 'M')">M</span>
+            <span class="size-option" onclick="selectSize(this, 'L')">L</span>
+            <span class="size-option" onclick="selectSize(this, 'XL')">XL</span>
+            <span class="size-option" onclick="selectSize(this, '2XL')">2XL</span>
+            <span class="size-option" onclick="selectSize(this, '3XL')">3XL</span>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('Celtics', 129, './imige/basketball maisurebi(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+
+</main>
+</div>
+</main>
+
+<footer>
+    <div class="footer-links">
+        <div class="quick-links">
+            <h3>სწრაფი ბმულები</h3>
+            <ul>
+                <li><a href="my_orders.php"> მომხმარებლის შეკვეთა</a></li>   
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
+                <li><a href="registration.php">რეგისტრაცია</a></li>
+            </ul>
+        </div>
+        
+        <div class="product-categories">
+            <h3>კატეგორიები</h3>
+            <ul>
+                <li><a href="football.html">ფეხბურთი</a></li>
+                <li><a href="basketball.html">კალათბურთი</a></li>
+                <li><a href="Rugby.html">რაგბი</a></li>
+                <li><a href="boxing.html">ბოქსი</a></li>
+                <li><a href="tennis.html">ჩოგბურთი</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>კონტაქტი</h3>
+            <p>ელფოსტა: <a href="sportshop@gmail.com">sportshop@gmail.com</a></p>
+            <p>ტელეფონი: +995 555 555 555</p>
+            <p>მისამართი: თბილისი, საქართველო</p>
+        </div>
+        
+        <div class="newsletter">
+            <h3>გამოწერა</h3>
+            <form>
+                <input type="email" placeholder="თქვენი ელფოსტა">
+                <button type="submit">გამოწერა</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+    </div>
+    <div class="google-map">
+        <h3>ჩვენი მაღაზია</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.68842897147!2d44.75275777517601!3d41.79192797080641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446e0b6f5fe34b%3A0xb887de0d38a21984!2zMTAg4YOe4YOU4YOi4YOg4YOUIOGDmOGDkeGDlOGDoOGDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1735936226989!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer-terms">
+        <p><a href="privacy.html">კონფიდენციალურობის პოლიტიკა</a> | <a href="terms.html">გამოყენების პირობები</a> | <a href="returns.html">დაბრუნების პოლიტიკა</a></p>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </div>
+</footer>
+
+    <script src="cart.js"></script>
+
+
+</body>
+</html>
